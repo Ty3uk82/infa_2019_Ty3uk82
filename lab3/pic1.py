@@ -43,6 +43,23 @@ def draw_sun(x, y, size):
     circle(x, y, size)
 
 def draw_a_boat(x, y, size):
+    def draw_sail():
+        vertex1  = (100, 200)
+        vertex2 = (130, 200)
+        vertex3 = (90, 250)
+        vertex4 = (90, 150)
+        triangle1 = [vertex1, vertex2, vertex3]
+        triangle2 = [vertex1, vertex2, vertex4]
+
+        penColor("black")
+        penSize(1)
+        brushColor(255, 239, 213)
+
+        polygon(triangle1)
+        polygon(triangle2)
+
+        pass
+    draw_sail()
     pass
 
 def draw_an_umbrella(x, y, size):
