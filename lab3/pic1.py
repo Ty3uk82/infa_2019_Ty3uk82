@@ -48,8 +48,19 @@ def draw_a_boat(x, y, size):
         vertex2 = (130, 200)
         vertex3 = (90, 250)
         vertex4 = (90, 150)
+        vertex7 = (-3, 0)
+        vertex5 = (vertex4[0]+vertex7[0],vertex4[1] )
+        vertex6 = (vertex3[0]+vertex7[0],vertex3[1] )
+
+
         triangle1 = [vertex1, vertex2, vertex3]
         triangle2 = [vertex1, vertex2, vertex4]
+        mast = [vertex4, vertex5, vertex6, vertex3]
+        print(mast)
+        print(vertex5)
+        print(vertex6)
+
+
 
         penColor("black")
         penSize(1)
@@ -57,6 +68,12 @@ def draw_a_boat(x, y, size):
 
         polygon(triangle1)
         polygon(triangle2)
+
+        penColor("black")
+        brushColor("black")
+        polygon(mast)
+
+
 
         pass
     draw_sail()
